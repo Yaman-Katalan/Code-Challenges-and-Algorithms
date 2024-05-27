@@ -35,6 +35,9 @@ class LinkedList:
     # Space complexity = O(1)
 
     def get_reverse(self):
+        """
+        This method is used to reverse the LinkedList.
+        """
         current = self.head
         values = []
         while current is not None:
