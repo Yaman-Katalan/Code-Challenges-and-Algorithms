@@ -40,6 +40,9 @@ class LinkedList:
         return True
 
     def delete_node(self, node):
+        """
+        This method deletes a node.
+        """
         if node.next == None:
             print("Error: Tail Node can't be deleted!")
             return False
@@ -48,6 +51,9 @@ class LinkedList:
         return True
 
     def __str__(self):
+        """
+        This method returns the values of the linked_list.
+        """
         current = self.head
         values = []
         while current is not None:
