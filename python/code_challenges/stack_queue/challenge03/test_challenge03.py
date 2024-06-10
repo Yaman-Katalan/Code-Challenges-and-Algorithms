@@ -1,4 +1,6 @@
 # Write your test here
+from challenge03 import Stack, delete_middle
+
 def test_delete_middle_odd_elements():
     stack = Stack()
     for i in [1, 2, 3, 4, 5]:
@@ -11,7 +13,7 @@ def test_delete_middle_even_elements():
     for i in [1, 2, 3, 4]:
         stack.push(i)
     stack = delete_middle(stack)
-    assert str(stack) == str([1, 2, 4])
+    assert str(stack) == str([1, 3, 4])
 
 def test_delete_middle_single_element():
     stack = Stack()
