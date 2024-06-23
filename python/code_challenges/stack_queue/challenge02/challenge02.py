@@ -1,5 +1,11 @@
 # Write here the code challenge solution
 def is_valid_parentheses(s):
+    """
+    Check if the input string has valid parentheses.
+    
+    :param s: The input string containing parentheses.
+    :return: True if the parentheses are valid, False otherwise.
+    """
     # Dictionary to keep track of matching pairs
     bracket_map = {')': '(', '}': '{', ']': '['}
     # Stack to keep track of opening brackets
