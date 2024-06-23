@@ -1,1 +1,1 @@
-<img src="./pic.jpg" alt="Alternate Text">
+<img src="./pic_edited.jpg" alt="Alternate Text">
