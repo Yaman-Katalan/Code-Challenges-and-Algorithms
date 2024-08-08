@@ -91,4 +91,3 @@ linked_list.append(13)
 
 linked_list.get_status()
 linked_list.get_reverse()
-
