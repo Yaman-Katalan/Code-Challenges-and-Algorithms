@@ -55,14 +55,31 @@ def buildTree(preorder, inorder):
 
 
 
+def printTree(root):
+    """
+    Prints the binary tree in preorder traversal.
+
+    Args:
+    - root (TreeNode): The root node of the binary tree.
+    """
+    if root:
+        print(root.val, end=' ')
+        printTree(root.left)
+        printTree(root.right)
+
 # Example 1
 preorder = [3, 9, 20, 15, 7]
 inorder = [9, 3, 15, 20, 7]
 root = buildTree(preorder, inorder)
-# The function will construct and return the binary tree structure as described.
+print("Tree from Example 1 (Preorder):")
+printTree(root)
+print()
 
 # Example 2
 preorder = [-1]
 inorder = [-1]
 root = buildTree(preorder, inorder)
-# In this case, the root will directly be constructed since there's only one element.
+print("Tree from Example 2 (Preorder):")
+printTree(root)
+print()
+
